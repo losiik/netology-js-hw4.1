@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist",
-    "lint": "eslint src"
+    "build": "webpack",
+    "lint": "eslint src",
+    "start": "serve dist"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,11 @@
     "globals": "^16.0.0"
   },
   "dependencies": {
-    "core-js": "^3.41.0"
+    "core-js": "^3.41.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   }
 }
